@@ -1,0 +1,68 @@
+/* No font-family here → inherit GTK (Inter 11 via settings.ini) */
+
+/* Palette (grayscale to match your rice) */
+@define-color bg rgba(18,18,20,0.94);
+@define-color bg-alt #1a1a1e;
+@define-color fg #e6e6e8;
+@define-color dim #88888e;
+@define-color mid #48484e;
+@define-color border #2a2a2f;
+@define-color accent #f5f5f6;   /* white selection */
+
+/* Kill GTK’s purple selection globally */
+* {
+  background-selection-color: @accent;
+  color-selection: #0c0c0e;
+  selection-background-color: @accent;
+  selection-color: #0c0c0e;
+}
+
+window {
+  margin: 0;
+  padding: 0;
+  border: 1px solid @border;
+  background-color: @bg;
+  color: @fg;
+  border-radius: 12px;
+  box-shadow: 0 18px 40px rgba(0,0,0,0.45);
+}
+
+#outer-box, #inner-box, #scroll, #list { background-color: transparent; }
+#outer-box { padding: 8px; }
+#inner-box { padding: 6px; }
+
+#input {
+  margin: 8px;
+  padding: 10px 14px;
+  border: 1px solid @border;
+  background: @bg-alt;
+  color: @fg;
+  border-radius: 10px;
+}
+#input:focus { border-color: @mid; }
+
+#entry {
+  padding: 8px 12px;
+  margin: 4px 6px;
+  border-radius: 10px;
+  background: transparent;
+  color: @dim;
+  border: 1px solid transparent;
+}
+
+#entry:selected {
+  color: #0c0c0e;            /* dark text */
+  background-color: @accent; /* white highlight */
+  border: 1px solid @accent;
+}
+
+#text { margin-left: 6px; }
+image { min-width: 16px; min-height: 16px; }
+
+tooltip {
+  background-color: @bg-alt;
+  border: 1px solid @border;
+  color: @fg;
+  border-radius: 8px;
+}
+

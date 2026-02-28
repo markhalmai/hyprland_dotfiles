@@ -1,0 +1,13 @@
+style=/home/cisztah/.config/wofi/style.css
+
+show=drun
+prompt=run:
+normal-window=true
+location=center
+lines=10
+columns=1
+no-actions=true
+allow-markup=true
+hide-scroll=true
+width=720
+
