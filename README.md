@@ -71,7 +71,7 @@ It verifies the Lua config before starting:
 Hyprland --verify-config --config ~/.config/hypr/hyprland.lua
 ```
 
-Your old `start-hyprland` command remains a fallback if you keep a legacy
+If you still want to use the old .config file for now `start-hyprland` command remains a fallback if you keep a legacy
 `~/.config/hypr/hyprland.conf`.
 
 ## Local Tweaks

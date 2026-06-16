@@ -1,0 +1,14 @@
+[Settings]
+HiddenFilesShown=false
+
+[Dolphin]
+Version=4
+ViewMode=1
+PreviewsShown=false
+GroupedSorting=false
+SortRole=text
+SortOrder=0
+SortFoldersFirst=true
+SortHiddenLast=true
+VisibleRoles=text,size,modificationtime
+Timestamp=2026,6,16,12,0,0

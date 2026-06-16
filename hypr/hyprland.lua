@@ -179,7 +179,7 @@ hl.window_rule({
 hl.window_rule({
     name = "minimal-dolphin",
     match = { class = "dolphin" },
-    opacity = "0.94 0.90",
+    opacity = "0.99 0.97",
     rounding = 14,
     border_size = 1,
     border_color = "rgba(8c8c8cff)",

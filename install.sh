@@ -53,6 +53,7 @@ link_path "$repo_dir/xsettingsd/xsettingsd.conf" "$config_dir/xsettingsd/xsettin
 link_path "$repo_dir/Kvantum/kvantum.kvconfig" "$config_dir/Kvantum/kvantum.kvconfig"
 link_path "$repo_dir/kdeglobals" "$config_dir/kdeglobals"
 link_path "$repo_dir/dolphinrc" "$config_dir/dolphinrc"
+link_path "$repo_dir/dolphin/view_properties/global/.directory" "$HOME/.local/share/dolphin/view_properties/global/.directory"
 link_path "$repo_dir/kiorc" "$config_dir/kiorc"
 
 link_path "$repo_dir/fish/functions/start-hyprland-lua.fish" "$config_dir/fish/functions/start-hyprland-lua.fish"
