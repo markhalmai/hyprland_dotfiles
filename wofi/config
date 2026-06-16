@@ -1,5 +1,4 @@
 style=/home/cisztah/.config/wofi/style.css
-
 show=drun
 prompt=run:
 normal-window=true
@@ -10,4 +9,4 @@ no-actions=true
 allow-markup=true
 hide-scroll=true
 width=720
-
+allow-images=true

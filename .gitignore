@@ -1,0 +1,13 @@
+*.bak
+*.backup
+*.backup-*
+*.tmp
+*.swp
+*~
+
+.DS_Store
+
+hypr/*.bak
+hypr/*.backup-*
+
+__pycache__/

@@ -1,42 +1,30 @@
 {
-//  "layer": "top",
   "position": "top",
-  "height": 30,
+  "height": 34,
 
-  "modules-left": ["hyprland/workspaces", "hyprland/window"],
-  "modules-center": ["clock"],
-  "modules-right": ["custom/volume", "hyprland/language", "tray"],
+  "modules-left": ["hyprland/workspaces"],
+  "modules-center": [],
+  "modules-right": ["hyprland/language", "pulseaudio", "tray", "clock"],
 
   "hyprland/workspaces": {
+    "disable-scroll": true,
     "all-outputs": true,
-    "on-click": "activate",
-    "format": "{name}",
-    "disable-scroll": false
+    "format": "{name}"
   },
-
-  "hyprland/window": {
-    "max-length": 60,
-    "separate-outputs": false,
-    "format": "{title}"
-  },
-
-  "clock": { "format": "{:%a %Y-%m-%d  %H:%M}", "tooltip": false },
 
   "hyprland/language": {
-    "format": "{short}",      // shows "US", "HU", etc.
-    "tooltip": false
-},
+  "format": "{short}",
+  "tooltip": false
+  },
 
-"custom/volume": {
-  "exec": "~/.config/waybar/scripts/volume.sh",
-  "interval": 1,
-  "return-type": "plain",
-  "tooltip": false,
-  "on-click": "pavucontrol",
-  "on-click-right": "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle",
-  "on-scroll-up": "wpctl set-volume -l 1 @DEFAULT_AUDIO_SINK@ 5%+",
-  "on-scroll-down": "wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%-"
-},
+  "pulseaudio": {
+    "format": "  {volume}%",
+    "on-click": "pavucontrol"
+  },
+
+  "clock": {
+    "format": "{:%a %d %b  %H:%M}"
+  },
 
   "tray": { "icon-size": 16, "spacing": 8 }
 }

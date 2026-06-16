@@ -1,57 +1,56 @@
 [window]
-opacity = 0.95
-padding = { x = 8, y = 6 }
+opacity = 0.6
+padding = { x = 14, y = 12 }
 decorations = "full"
 
 [font]
 normal = { family = "JetBrainsMono Nerd Font", style = "Regular" }
 bold = { family = "JetBrainsMono Nerd Font", style = "Bold" }
 italic = { family = "JetBrainsMono Nerd Font", style = "Italic" }
-size = 9.0
+size = 11.0
 
 [cursor]
 style = { shape = "Block", blinking = "On" }
-vi_mode_style = { shape = "Block", blinking = "On" }
 unfocused_hollow = false
 thickness = 0.15
 
+# macOS-style pastel accents (soft, not neon)
 [colors.primary]
-background = "#0c0c0e"
+background = "#232326"   # true graphite (neutral)
 foreground = "#e6e6e8"
 
 [colors.normal]
-black   = "#0c0c0e"
-red     = "#4a4a4a"
-green   = "#5a5a5a"
-yellow  = "#6a6a6f"
-blue    = "#7a7a7f"
-magenta = "#8a8a8f"
-cyan    = "#9a9a9f"
-white   = "#e6e6e8"
+black   = "#232326"
+red     = "#f28fad"   # soft rose
+green   = "#a6da95"   # mint
+yellow  = "#eed49f"   # warm pastel
+blue    = "#8aadf4"   # mac system blue
+magenta = "#c6a0f6"   # soft lavender
+cyan    = "#8bd5ca"   # muted aqua
+white   = "#cad3f5"
 
 [colors.bright]
-black   = "#1a1a1e"
-red     = "#5a5a5f"
-green   = "#6a6a6f"
-yellow  = "#7a7a7f"
-blue    = "#8a8a8f"
-magenta = "#9a9a9f"
-cyan    = "#aaaaaf"
-white   = "#f5f5f6"
+black   = "#2f2f33"
+red     = "#f28fad"
+green   = "#a6da95"
+yellow  = "#eed49f"
+blue    = "#8aadf4"
+magenta = "#c6a0f6"
+cyan    = "#8bd5ca"
+white   = "#ffffff"
 
 [colors.cursor]
-text = "#0c0c0e"
+text = "#232326"
 cursor = "#e6e6e8"
 
 [colors.selection]
-text = "#0c0c0e"
-background = "#e6e6e8"
+text = "#232326"
+background = "#b7bdf8"
 
 [mouse]
 hide_when_typing = true
 
 [keyboard]
 bindings = [
-  # Match your Hyprland habit: open new terminal with Ctrl+Shift+Enter
   { key = "Enter", mods = "Control|Shift", action = "SpawnNewInstance" }
 ]
