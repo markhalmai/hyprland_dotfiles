@@ -35,7 +35,7 @@ local menu        = "wofi --show drun"
 
 hl.on("hyprland.start", function()
     hl.exec_cmd("hyprlock & waybar -c ~/.config/waybar/config -s ~/.config/waybar/style.css & hyprpaper & hyprshell")
-    hl.exec_cmd("dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP")
+    hl.exec_cmd("dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP GTK_THEME XCURSOR_THEME XCURSOR_SIZE HYPRCURSOR_SIZE QT_QPA_PLATFORMTHEME QT_STYLE_OVERRIDE")
 end)
 
 ----------------
@@ -47,7 +47,7 @@ hl.env("XCURSOR_THEME", "Bibata-Modern-Classic")
 hl.env("XCURSOR_SIZE", "24")
 hl.env("HYPRCURSOR_SIZE", "24")
 hl.env("QT_QPA_PLATFORMTHEME", "kde")
-hl.env("QT_STYLE_OVERRIDE", "kvantum")
+hl.env("QT_STYLE_OVERRIDE", "Breeze")
 
 ----------------
 -- Look and feel
@@ -179,7 +179,7 @@ hl.window_rule({
 hl.window_rule({
     name = "minimal-dolphin",
     match = { class = "dolphin" },
-    opacity = "0.99 0.97",
+    opacity = "1.0 1.0",
     rounding = 14,
     border_size = 1,
     border_color = "rgba(8c8c8cff)",

@@ -133,22 +133,10 @@ ForegroundVisited=188,170,230
 [General]
 ColorScheme=HyprlandMonoMocha
 Name=Hyprland Mono Mocha
-TerminalApplication=alacritty
-fixed=JetBrains Mono,10,-1,5,50,0,0,0,0,0
-font=Inter,11,-1,5,50,0,0,0,0,0
 shadeSortColumn=true
 
-[Icons]
-Theme=Papirus-Dark
-
 [KDE]
-LookAndFeelPackage=org.kde.breezedark.desktop
-SingleClick=false
 contrast=7
-widgetStyle=Breeze
-
-[Toolbar style]
-ToolButtonStyle=IconOnly
 
 [WM]
 activeBackground=24,24,28

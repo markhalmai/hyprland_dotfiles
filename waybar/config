@@ -9,6 +9,9 @@
   "hyprland/workspaces": {
     "disable-scroll": true,
     "all-outputs": true,
+    "on-click": "activate",
+    "move-to-monitor": true,
+    "sort-by": "number",
     "format": "{name}"
   },
 

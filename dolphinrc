@@ -42,14 +42,14 @@ ShowViewMode=true
 [DetailsMode]
 ExpandableFolders=false
 HighlightEntireRow=true
-IconSize=22
+IconSize=20
 LeftPadding=12
 PreviewSize=64
 RightPadding=12
 UseSystemFont=true
 
 [IconsMode]
-IconSize=40
+IconSize=44
 MaximumTextLines=1
 PreviewSize=64
 TextWidthIndex=1

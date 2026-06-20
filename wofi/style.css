@@ -22,30 +22,26 @@ window {
 #row {
     padding: 8px 12px;
     border-radius: 12px;
-    display: flex;
-    align-items: center;
-    gap: 10px; /* space between icon and text */
+    min-height: 36px;
 }
 
-/* Highlight selection */
 #row:selected {
     background: rgba(255, 255, 255, 0.12);
 }
 
-/* App icon */
-#row > image {
+#img,
+#row image {
     width: 24px;
     height: 24px;
-    border-radius: 6px;
+    margin-right: 10px;
 }
 
-/* App name text */
-#row > label {
+#text,
+#row label {
     color: white;
     font-size: 11pt;
 }
 
-/* Optional: pastel accent for selected text */
-#row:selected > label {
-    color: #c6a0f6; /* soft lavender accent */
+#row:selected label {
+    color: #f5f5f7;
 }
